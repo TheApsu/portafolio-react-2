@@ -1,0 +1,66 @@
+.mySwiper {
+  width: 75%;
+  height: 320px;
+}
+
+@media screen and (max-width: 420px) {
+  .mySwiper {
+    width: 90%;
+    height: 220px;
+  }
+}
+
+.swiper-slide {
+  border-radius: 18px;
+  background-color: transparent;
+  background: transparent;
+}
+
+.mySwiper {
+  .container-card {
+    height: 100%;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    height: 100%;
+    font-weight: bold;
+    color: #fff;
+    height: calc(100% - 40px);
+    background-color: #272643;
+    padding: 1rem;
+    img {
+      width: 200px;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+  }
+}
+
+.paginator {
+  margin-top: 1rem;
+  position: relative;
+
+  .control-paginator {
+    width: 80px;
+    height: 15px;
+    border-radius: 0.2rem;
+    background-color: #bae8e8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #7db5b5;
+    }
+    &:not(.active) {
+      transform: scale(0.5);
+    }
+    &.active {
+      background-color: #272643;
+    }
+  }
+}
